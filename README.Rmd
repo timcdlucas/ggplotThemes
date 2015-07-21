@@ -5,7 +5,7 @@ I intend to write at least a basic theme and a presentation theme.
 
 I will probably also write a theme to use in my nicely typesetted thesis as well as perhaps a poster theme and a blogpost theme.
 
-
+I started with and was largely inspired by Noam Ross's [theme](https://github.com/noamross/noamtools/blob/master/R/theme_nr.R).
 
 ## Base theme
 
