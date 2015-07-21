@@ -10,6 +10,28 @@ I will probably also write a theme to use in my nicely typesetted thesis as well
 ## Base theme
 
 
+```
+## Loading required package: methods
+```
 
 
-<img src="figure/baseTheme-1.png" title="plot of chunk baseTheme" alt="plot of chunk baseTheme" width="0.8\textwidth" style="display: block; margin: auto;" /><img src="figure/baseTheme-2.png" title="plot of chunk baseTheme" alt="plot of chunk baseTheme" width="0.8\textwidth" style="display: block; margin: auto;" />
+
+```r
+ggplot(d, aes(x = a, y = b, fill = c)) + 
+  geom_bar(stat = 'identity', position=position_dodge()) +
+  xlab('The X axis') + 
+  ylab('The Y axis') +
+  theme_tcdl
+```
+
+![plot of chunk baseTheme](figure/baseTheme-1.png) 
+
+```r
+ggplot(d, aes(x = a, y = b)) + 
+  geom_point(size = 3.5) +
+  xlab('The X axis') + 
+  ylab('The Y axis') +
+  theme_tcdl
+```
+
+![plot of chunk baseTheme](figure/baseTheme-2.png) 

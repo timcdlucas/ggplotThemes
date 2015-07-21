@@ -11,25 +11,30 @@ I will probably also write a theme to use in my nicely typesetted thesis as well
 
 ```{r data, echo = FALSE, results = 'markdown'}
 
+library(ggplot2)
+library(grid)
+
 d <- data.frame(a = 1:10, b = rpois(10, 4), c = rep(c('a', 'b'), 5))
 source('theme_tcdl.R')
 
 ```
 
 
-```{r baseTheme, dev = 'png', fig.width = 5, fig.height = 4}
+```{r baseTheme, dev = 'png', fig.width = 7, fig.height = 5}
 
 ggplot(d, aes(x = a, y = b, fill = c)) + 
   geom_bar(stat = 'identity', position=position_dodge()) +
   xlab('The X axis') + 
-  ylab('The Y axis')
+  ylab('The Y axis') +
+  theme_tcdl
 
 
 
 ggplot(d, aes(x = a, y = b)) + 
   geom_point(size = 3.5) +
   xlab('The X axis') + 
-  ylab('The Y axis')
+  ylab('The Y axis') +
+  theme_tcdl
 
 
 ```
