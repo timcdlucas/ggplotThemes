@@ -10,9 +10,6 @@ I will probably also write a theme to use in my nicely typesetted thesis as well
 ## Base theme
 
 
-```
-## Loading required package: methods
-```
 
 
 

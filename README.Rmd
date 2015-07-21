@@ -9,13 +9,15 @@ I will probably also write a theme to use in my nicely typesetted thesis as well
 
 ## Base theme
 
-```{r data, echo = FALSE, results = 'markdown'}
+```{r data, echo = FALSE, results = 'hide', message = FALSE}
 
 library(ggplot2)
 library(grid)
 
 d <- data.frame(a = 1:10, b = rpois(10, 4), c = rep(c('a', 'b'), 5))
 source('theme_tcdl.R')
+
+set.seed(10000)
 
 ```
 
