@@ -1,0 +1,35 @@
+# ggplot2 themes
+
+I will use this repo to collect themes.
+I intend to write at least a basic theme and a presentation theme.
+
+I will probably also write a theme to use in my nicely typesetted thesis as well as perhaps a poster theme and a blogpost theme.
+
+
+
+## Base theme
+
+```{r data, echo = FALSE, results = 'markdown'}
+
+d <- data.frame(a = 1:10, b = rpois(10, 4), c = rep(c('a', 'b'), 5))
+source('theme_tcdl.R')
+
+```
+
+
+```{r baseTheme, dev = 'png', fig.width = 5, fig.height = 4}
+
+ggplot(d, aes(x = a, y = b, fill = c)) + 
+  geom_bar(stat = 'identity', position=position_dodge()) +
+  xlab('The X axis') + 
+  ylab('The Y axis')
+
+
+
+ggplot(d, aes(x = a, y = b)) + 
+  geom_point(size = 3.5) +
+  xlab('The X axis') + 
+  ylab('The Y axis')
+
+
+```
