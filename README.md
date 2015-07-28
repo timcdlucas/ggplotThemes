@@ -7,6 +7,8 @@ I will probably also write a theme to use in my nicely typesetted thesis as well
 
 I started with and was largely inspired by Noam Ross's [theme](https://github.com/noamross/noamtools/blob/master/R/theme_nr.R).
 
+This uses the extrafonts package. And you probably need the 'Lato' font family on your computer.
+
 ## Base theme
 
 
