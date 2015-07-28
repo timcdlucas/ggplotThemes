@@ -7,7 +7,6 @@ I will probably also write a theme to use in my nicely typesetted thesis as well
 
 I started with and was largely inspired by Noam Ross's [theme](https://github.com/noamross/noamtools/blob/master/R/theme_nr.R).
 
-This uses the extrafonts package. And you probably need the 'Lato' font family on your computer.
 
 ## Base theme
 
@@ -34,3 +33,27 @@ ggplot(d, aes(x = a, y = b)) +
 ```
 
 ![plot of chunk baseTheme](figure/baseTheme-2.png) 
+
+
+
+
+
+```r
+ggplot(d, aes(x = a, y = b, fill = c)) + 
+  geom_bar(stat = 'identity', position=position_dodge()) +
+  xlab('The X axis') + 
+  ylab('The Y axis') +
+  theme_pres
+```
+
+![plot of chunk presTheme](figure/presTheme-1.png) 
+
+```r
+ggplot(d, aes(x = a, y = b)) + 
+  geom_point(size = 3.5) +
+  xlab('The X axis') + 
+  ylab('The Y axis') +
+  theme_pres
+```
+
+![plot of chunk presTheme](figure/presTheme-2.png) 
